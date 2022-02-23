@@ -11,17 +11,17 @@ fi
 command="$1"
 case "${command}" in
 	"help")
-        echo "utilize uma destas opções: services [create|start|stop]"
+        echo "use uma das seguintes opções: services [create|start|stop]"
         ;;
-    "start")
+        "start")
 		
-		echo "Iniciando Container"
-		docker-compose --log-level ERROR -p dude up -d --remove-orphans
+		echo "Iniciando o the dude"
+                docker compose -p dude up -d --remove-orphans 
 		echo ""
 		;;
 	"stop")
 		echo "Parando container"
-		docker-compose --log-level ERROR -p dude down -v --remove-orphans
+		docker compose -p dude down -v --remove-orphans
 		;;
 	"create")
 	      echo "Obtendo o The Dude"
@@ -29,7 +29,7 @@ case "${command}" in
 		;;
 	*)
 		echo "Comando não encontrado!."
-		echo "utilize uma destas opções: services [create|start|stop]"
+		echo "use uma das seguintes opções: services [create|start|stop]"
 		exit 127;
 		;;
 esac
