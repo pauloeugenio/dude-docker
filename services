@@ -20,7 +20,7 @@ case "${command}" in
 		echo ""
 		;;
 	"stop")
-		echo "Parando container"
+		echo "Parando o container"
 		docker compose -p dude down -v --remove-orphans
 		;;
 	"create")
