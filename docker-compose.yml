@@ -1,0 +1,27 @@
+version: "3.1"
+services:
+
+ dude:
+    image: alexanderfefelov/dude
+    hostname: dude
+    container_name: dude
+    networks:
+      - default
+    expose:
+      - "80"
+    ports:
+      - "9000:80"
+      - "444:443"
+      - "514:514"
+      - "2210:2210"
+      - "2211:2211"
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    restart: always
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.18.1.0/24
