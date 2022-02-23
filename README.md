@@ -42,4 +42,12 @@ docker run -d --name duce --restart always --network default -p 9000:80 -p 444:4
 Ao realizar qualquer uma das maneiras acima, você verá o seu Dude funcionando perfeitamente, isso mesmo! simples assim! ...para testar basta conectar ao servidor utilizando um cliente Dude, o mesmo citado acima na versão para windows, basta colocar o ip da maquina que está rodando o docker e voa-lá você terá acesso a sua interface do The Dude.</br></br>
 
 <h2>Instalar o The Dude com Docker-compose</h2>
-Se você quer deixar o docker-compose configurado para realizar a instalação/manutenção do seu servidor de maneira ainda mais simples, basta seguir os passos a seguir. 
+Se você quer deixar o docker-compose configurado para realizar a instalação/manutenção do seu the dude de maneira ainda mais simples, basta seguir os passos a seguir.
+
+<h3>Primeiro Passo:</h3>
+baixe o repositorio dude-docker em seu linux com o docker instalado, para isso utilize o comando abaixo:
+<pre>
+<code>
+git clone https://github.com/pauloeugenio/dude-docker
+</code>
+</pre>
