@@ -65,7 +65,7 @@ sudo ./services start
 </pre>
 Feito isso, você terá o seu The dude rodando.
 
-<h2>Atenção</h2>
+<h2>Atenção!!!</h2>
 Se você estiver utilizando uma versão antiga do docker-compose(inferior a 2.0) você deverá utilizar o seguinte passo:<br>
 
 Baixe o repositorio dude-docker em seu linux, para isso utilize o comando abaixo:
