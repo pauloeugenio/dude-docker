@@ -15,7 +15,7 @@ Você pode criar o container de duas maneiras:
 Maneira recomendada pelo desenvolvedor da imagem.
 <pre>
 <code>
-docker run \
+sudo docker run \
   --name dude \
   --detach \
   --restart unless-stopped \
@@ -35,7 +35,7 @@ docker run \
 Maneira mais simplificada:
 <pre>
 <code>
-docker run -d --name duce --restart always --network default -p 9000:80 -p 444:443 -p 514:514 -p 2210:2210 -p 2211:2211 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro alexanderfefelov/dude
+sudo docker run -d --name dude --restart always --network default -p 9000:80 -p 443:443 -p 514:514 -p 2210:2210 -p 2211:2211 -v /etc/localtime:/etc/localtime:ro -v /etc/timezone:/etc/timezone:ro alexanderfefelov/dude
 </code>
 </pre>
 
@@ -48,7 +48,7 @@ Se você quer deixar o docker-compose configurado para realizar a instalação/m
 Baixe o repositorio dude-docker em seu linux, para isso utilize o comando abaixo:
 <pre>
 <code>
-git clone https://github.com/pauloeugenio/dude-docker
+sudo git clone https://github.com/pauloeugenio/dude-docker
 </code>
 </pre>
 Feito isso, acesse o diretorio que você acabou de baixar e torne o arquivo "services" executavel com o seguinte comando abaixo:
@@ -71,7 +71,7 @@ Se você estiver utilizando uma versão antiga do docker-compose(inferior a 2.0)
 Baixe o repositorio dude-docker em seu linux, para isso utilize o comando abaixo:
 <pre>
 <code>
-git clone https://github.com/pauloeugenio/dude-docker
+sudo git clone https://github.com/pauloeugenio/dude-docker
 </code>
 </pre>
 Feito isso, acesse o diretorio que você acabou de baixar e torne o arquivo "services-old" executavel com o seguinte comando abaixo:
