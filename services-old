@@ -1,0 +1,35 @@
+#!/bin/bash
+
+set -e
+
+if (( $# != 1 )); then
+    echo "Opção invalida!"
+    echo "utilize uma destas opções: services [create|start|stop]"
+    exit 1
+fi
+
+command="$1"
+case "${command}" in
+	"help")
+        echo "use uma das seguintes opções: services [create|start|stop]"
+        ;;
+        "start")
+		
+		echo "Iniciando o the dude"
+                docker-compose --log-level ERROR -p dude up -d --remove-orphans
+		echo ""
+		;;
+	"stop")
+		echo "Parando o container"
+    docker-compose --log-level ERROR -p dude down -d --remove-orphans
+		;;
+	"create")
+	      echo "Obtendo o The Dude"
+		docker pull alexanderfefelov/dude
+		;;
+	*)
+		echo "Comando não encontrado!."
+		echo "use uma das seguintes opções: services [create|start|stop]"
+		exit 127;
+		;;
+esac
