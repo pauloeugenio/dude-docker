@@ -66,21 +66,21 @@ sudo ./services start
 Feito isso, você terá o seu The dude rodando.
 
 <h2>Atenção!!!</h2>
-Se você estiver utilizando uma versão antiga do docker-compose(inferior a 2.0) você deverá utilizar o seguinte passo:<br>
+Se você estiver utilizando uma versão antiga do docker-compose(inferior a 2.0) você deverá utilizar o seguinte passo-a-passo:<br>
 
-Baixe o repositorio dude-docker em seu linux, para isso utilize o comando abaixo:
+Baixe o repositório dude-docker em seu linux, para isso utilize o comando abaixo:
 <pre>
 <code>
 sudo git clone https://github.com/pauloeugenio/dude-docker
 </code>
 </pre>
-Feito isso, acesse o diretorio que você acabou de baixar e torne o arquivo "services-old" executavel com o seguinte comando abaixo:
+Feito isso, acesse o diretório que você acabou de baixar, e torne o arquivo "services-old" executavel com o seguinte comando abaixo:
 <pre>
 <code>
 sudo chmod +x services-old
 </code>
 </pre>
-Na sequencia é só realizar a instalação do seu dude com o seguinte comando:
+Na sequência é só realizar a instalação do seu the dude com o seguinte comando:
 <pre>
 <code>
 sudo ./services-old start
