@@ -87,3 +87,38 @@ sudo ./services-old start
 </code>
 </pre>
 
+
+<h2>EXTRA - Integração com Telegram</h2>
+Se tiver interesse em enviar as informações via telegram, basta copiar o arquivo "curl.exe" que está dentro do arquivo "Dude+Telegram+Windows.zip"
+para o diretorio:
+<pre>
+<code>
+sudo ~/root/.wine/dosdevices/c\:
+</code>
+</pre>
+<h2>Como fazer isso?</h2>
+1º Passo, vá até o diretorio em que você clonou este repositorio e extraia o arquivo "Dude+Telegram+Windows.zip"
+para isso utilize o comando:
+<pre>
+<code>
+unzip Dude+Telegram+Windows.zip
+</code>
+</pre>
+caso não tenha instalado o unzip é so instalar:
+<pre>
+<code>
+sudo apt-get install unzip
+</code>
+</pre>
+
+Depois de descompactar, basta copiar o arquivo "curl.exe" para o diretorio "/root/.wine/dosdevices/c\:"
+para isso utilize o seguinte comando:
+<pre>
+<code>
+sudo cp curl.exe /root/.wine/dosdevices/c\:
+</code>
+</pre>
+Feito isso, você terá o programa responsavel por executar os comandos do Telegram, enquanto não faço um video explicando, basta seguir o video abaixo para proceder com os procedimentos e conseguir receber as menssagens via telegram:
+https://www.youtube.com/watch?v=GLXHAe9KQGE
+
+
